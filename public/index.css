@@ -1,0 +1,171 @@
+.picture {
+  background-image: url(../images/pizza.png);
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo Black", sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+#menu {
+  width: auto;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+}
+
+#modalWindow {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+
+.total-amount {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
+}
+
+#pizzaMaker {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  background-color: #894caf;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.1s;
+  margin-top: auto;
+}
+
+#button:hover {
+  background-color: #b56fe0;
+}
+
+#button:active {
+  transform: scale(0.95);
+}
+
+.clientChoice {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.ingredients {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  height: 100%;
+}
+
+.ingredients p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ingredients li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.ingredients li:hover {
+  color: #f793ef;
+}
+
+.drinkText {
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.drinkText:hover {
+  color: #f793ef;
+}
+
+#drinksList {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 40px;
+}
+
+.select-drink-item {
+  background-color: #333333;
+  padding: 20px;
+  border-radius: 10px;
+  width: 18%;
+  cursor: pointer;
+}
+
+.select-drink-item img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.selected {
+  color: #9856d2;
+}
+
+.picture {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: auto;
+}
+
+.picture > .quarter {
+  background-image: url("../images/pizza.png");
+  width: 200px;
+  height: 200px;
+  background-size: 400px 400px;
+}
+
+.picture > .quarter:nth-child(2) {
+  background-position: -200px 0;
+}
+
+.picture > .quarter:nth-child(3) {
+  background-position: 0 -200px;
+}
+
+.picture > .quarter:nth-child(4) {
+  background-position: -200px -200px;
+}
