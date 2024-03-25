@@ -30,7 +30,7 @@ function addToAnotherUl(e) {
     updatePrice();
     updatePizzaView();
 
-    let selectedIngredientsCount = document.querySelectorAll('.finalIngredients li.selected').length;
+    let selectedIngredientsCount = document.querySelectorAll('.finalIngredients li').length;
 
     if (selectedIngredientsCount >= 4) {
       document.querySelector('.typical-btn').hidden = false;
@@ -47,8 +47,10 @@ function updatePrice() {
 
 function removeLi(e) {
   if (e.target.tagName === 'LI') {
+
     const selectedLi = e.target;
-    ingredientsBar.querySelectorAll('.selected' + selectedLi.className).forEach((el) => {
+    
+    document.querySelectorAll('.finalIngredients .selected').forEach((el) => {
       if (el.textContent === selectedLi.textContent) {
         el.classList.remove('selected');
       }

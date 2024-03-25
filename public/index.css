@@ -141,31 +141,49 @@ p {
 }
 
 .selected {
-  color: #9856d2;
+  background-color: #9856d2; 
 }
 
 .picture {
-  display: flex;
-  flex-wrap: wrap;
-  width: 400px;
-  margin: auto;
+  width: 400px; 
+  height: 400px; 
+  position: relative;
+  visibility: hidden;
 }
 
-.picture > .quarter {
-  background-image: url("../images/pizza.png");
+.quarter {
   width: 200px;
-  height: 200px;
-  background-size: 400px 400px;
+  height: 200px; 
+  background-image: url("../images/pizza.png");
+  background-size: 400px 400px; 
+  position: absolute;
+} 
+
+
+.picture > .quarter:nth-child(1) {
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+  visibility: visible;
 }
 
 .picture > .quarter:nth-child(2) {
+  top: 0;
+  left: 50%;
   background-position: -200px 0;
+  visibility: visible;
 }
 
 .picture > .quarter:nth-child(3) {
+  top: 50%;
+  left: 0;
   background-position: 0 -200px;
+  visibility: visible;
 }
 
 .picture > .quarter:nth-child(4) {
+  top: 50%;
+  left: 50%;
   background-position: -200px -200px;
+  visibility: visible;
 }
